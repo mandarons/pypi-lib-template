@@ -14,7 +14,8 @@ setup(
     version=VERSION,
     author="Mandar Patil",
     author_email="mandarons@pm.me",
-    description="Python library to interact with iCloud web service",
+    # TODO: update description
+    description="Python library to ...",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=REPO_URL,
@@ -26,6 +27,7 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=required,
+    # TODO remove if there is no entry point
     entry_points="""
     [console_scripts]
     icloud=library-name.cmdline:main

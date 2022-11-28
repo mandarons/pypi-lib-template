@@ -1,1 +1,1 @@
-# pypi-lib-template
+# library-name

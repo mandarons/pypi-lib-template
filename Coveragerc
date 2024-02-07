@@ -1,6 +1,6 @@
 [run]
  include =
-    library-name/*
+    replaceme/*
  [report]
  include =
-    library-name/*
+    replaceme/*

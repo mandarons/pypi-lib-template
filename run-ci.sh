@@ -11,16 +11,18 @@ deleteDir allure-report
 deleteDir htmlcov
 deleteDir build
 deleteDir dist
-deleteDir library-name.egg-info
+deleteDir replaceme.egg-info
 deleteFile .coverage
 deleteFile coverage.xml
 
 echo "Linting ..." &&
-    pylint library-name/ tests/ &&
+    ruff check --fix replaceme/ tests/ &&
+    echo "Formatting ..." &&
+    ruff format replaceme/ tests/ &&
     echo "Testing ..." &&
     pytest &&
     echo "Reporting ..." &&
     allure generate --clean &&
     echo "Building the distribution ..." &&
-    python setup.py sdist bdist_wheel &&
+    python -m build &&
     echo "Done."

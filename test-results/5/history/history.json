@@ -1,0 +1,1 @@
+{"0bfdfc3b314f21db93d8ee59e78e078d":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"4c0cfe7c2f951efa","reportUrl":"https://mandarons.github.io/pypi-lib-template/test-results/5//#testresult/4c0cfe7c2f951efa","status":"passed","time":{"start":1707404062383,"stop":1707404062384,"duration":1}}]}}
